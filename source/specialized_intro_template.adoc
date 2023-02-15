@@ -1,0 +1,30 @@
+[[specialized-part-of-introduction]]
+=== Introduction to the data management at (insert organisation name here)
+
+// Data 
+
+==== Background 
+
+
+[[specialized-external-requirements]]
+==== External data management requirements 
+
+
+​
+[[data-management-roles-at]]
+==== Data Management roles 
+
+// add institute or organisation specific information below
+
+[%header, cols=3*]
+|===
+|Role
+|Description
+|Responsibility
+
+|
+|
+|
+
+|===
+
