@@ -1,10 +1,10 @@
-![html/pdf](https://github.com/metno/data-management-handbook/workflows/html/pdf/badge.svg?branch=master)
+![html/pdf](https://github.com/S-ENDA/data-management-handbook/workflows/html/pdf/badge.svg?branch=master)
 
 # Data Management Handbook
 
 Data Management Handbook template for MET and partners in S-ENDA written in asciidoc.
 
-See it [here](https://metno.github.io/data-management-handbook/).
+See it [here](https://s-enda.github.io/data-management-handbook/).
 
 This handbook template is based on the first version of the Data Management Handbook used at the Meteorological Institute in Norway (METNorway). The handbook was rewritten into this template version so that other institutions and partners could use it to create their own data management handbook.
 
