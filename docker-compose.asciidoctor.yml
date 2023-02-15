@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile.asciidoctor
     volumes:
       - ./source:/workdir
-      - ./html:/html
+      - ./docs:/docs
     command: >
       asciidoctor -r asciidoctor-diagram
       -a title_page=${TITLE_PAGE:-title_page.adoc}
@@ -25,7 +25,7 @@ services:
       -a imagesdir=${IMAGES_DIR:-images}
       -a data-uri=Yes
       -n data-management-handbook.adoc 
-      -D /html
+      -D /docs
 
   pdf:
     build:
