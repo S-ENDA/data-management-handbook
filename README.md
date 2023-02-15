@@ -1,4 +1,4 @@
-![html/pdf](https://github.com/S-ENDA/data-management-handbook/workflows/html/pdf/badge.svg?branch=master)
+[![html/pdf](https://github.com/S-ENDA/data-management-handbook/actions/workflows/make-doc.yml/badge.svg)](https://github.com/S-ENDA/data-management-handbook/actions/workflows/make-doc.yml)
 
 # Data Management Handbook
 
