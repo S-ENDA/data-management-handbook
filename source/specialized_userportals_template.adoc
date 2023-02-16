@@ -1,5 +1,5 @@
 [[up-implementation]]
-=== Implementation of user portals at [institution]
+**Implementation of user portals at [institution]**
 
 // general introducion:
 
