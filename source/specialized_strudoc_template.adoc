@@ -1,5 +1,5 @@
 [[specialized-struct-and-doc]]
-=== Structuring and documenting data at [insert organisation here]
+==== Structuring and documenting data at [insert organisation here]
 
 [[Current-practice]]
 ==== Current practice in structuring and documenting data
