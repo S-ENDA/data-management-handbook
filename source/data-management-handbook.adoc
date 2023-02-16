@@ -17,12 +17,14 @@ include::introduction.adoc[]
 //:numbered:
 //include::human-roles.adoc[]
 
-:numbered:
-include::summary-requirements.adoc[]
+//:numbered:
+//include::summary-requirements.adoc[]
 
 :numbered:
 include::{special_intro}[]
 
+:numbered:
+include::insight.adoc[]
 
 :numbered:
 include::structure-and-documenting.adoc[]
@@ -32,9 +34,6 @@ include::{special_strudoc}[]
 
 :numbered:
 include::data-services.adoc[]
-
-:numbered:
-include::{special_data_services}[]
 
 :numbered:
 include::user-portals.adoc[]
@@ -58,21 +57,28 @@ include::acdd-elements.adoc[]
 include::{spec_default_global_attrs}[]
 
 :numbered:
-include::add_metadata_python_script_example.adoc[]
+include::{special_practical_guidance}[]
 
 :numbered:
-include::register_context.adoc[]
+include::references.adoc[]
 
 :numbered:
-include::search_context.adoc[]
+include::{special_data_services}[]
+
+//:numbered:
+//include::add_metadata_python_script_example.adoc[]
+
+//:numbered:
+//include::register_context.adoc[]
+
+//:numbered:
+//include::search_context.adoc[]
 
 // optional subchapter that can be used as a checklist for data managers.
 
-:numbered:
-include::{special_practical_guidance}[]
 
-:numbered!:
-include::acknowledgements.adoc[]
+//:numbered!:
+//include::acknowledgements.adoc[]
 
 :numbered!:
 include::glossary.adoc[]
