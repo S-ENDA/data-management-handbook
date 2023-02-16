@@ -6,9 +6,6 @@ on:
       - master
     paths:
       - 'source/**'
-  pull_request: 
-    branches:
-      - master
   schedule:
     - cron:  '23 2 * * *'
 
