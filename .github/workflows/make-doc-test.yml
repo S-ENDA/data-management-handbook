@@ -1,4 +1,4 @@
-name: 'html/pdf'
+name: 'test html/pdf'
 
 on:
   pull_request: 
