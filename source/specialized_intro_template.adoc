@@ -1,5 +1,5 @@
 [[specialized-part-of-introduction]]
-=== Introduction to the data management at (insert organisation name here)
+=== Summary of the data management at (insert organisation name here)
 
 // Data 
 
