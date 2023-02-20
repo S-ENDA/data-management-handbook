@@ -9,10 +9,11 @@
 :xrefstyle: short
 :toclevels: 6
 
+:numbered:
 include::{title_page}[]
 
 :numbered:
-include::introduction.adoc[]
+include::summary.adoc[]
 
 //:numbered:
 //include::human-roles.adoc[]
@@ -22,6 +23,30 @@ include::introduction.adoc[]
 
 :numbered:
 include::{special_intro}[]
+
+:numbered:
+include::practical-guide.adoc[]
+
+:numbered:
+include::acdd-elements.adoc[]
+
+:numbered:
+include::{spec_default_global_attrs}[]
+
+:numbered:
+include::add_metadata_python_script_example.adoc[]
+
+:numbered:
+include::register_context.adoc[]
+
+:numbered:
+include::search_context.adoc[]
+
+// optional subchapter that can be used as a checklist for data managers.
+
+:numbered:
+include::{special_practical_guidance}[]
+
 
 :numbered:
 include::insight.adoc[]
@@ -36,6 +61,9 @@ include::{special_strudoc}[]
 include::data-services.adoc[]
 
 :numbered:
+include::{special_data_services}[]
+
+:numbered:
 include::user-portals.adoc[]
 
 :numbered:
@@ -47,38 +75,8 @@ include::data-governance.adoc[]
 :numbered:
 include::{special_data_governance}[]
 
-:numbered:
-include::practical-guide.adoc[]
-
-:numbered:
-include::acdd-elements.adoc[]
-
-:numbered:
-include::{spec_default_global_attrs}[]
-
-:numbered:
-include::{special_practical_guidance}[]
-
-:numbered:
-include::references.adoc[]
-
-:numbered:
-include::{special_data_services}[]
-
-//:numbered:
-//include::add_metadata_python_script_example.adoc[]
-
-//:numbered:
-//include::register_context.adoc[]
-
-//:numbered:
-//include::search_context.adoc[]
-
-// optional subchapter that can be used as a checklist for data managers.
-
-
-//:numbered!:
-//include::acknowledgements.adoc[]
+:numbered!:
+include::acknowledgements.adoc[]
 
 :numbered!:
 include::glossary.adoc[]
