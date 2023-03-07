@@ -15,12 +15,6 @@ include::{title_page}[]
 :numbered:
 include::summary.adoc[]
 
-//:numbered:
-//include::human-roles.adoc[]
-
-//:numbered:
-//include::summary-requirements.adoc[]
-
 :numbered:
 include::{special_intro}[]
 
@@ -50,30 +44,7 @@ include::{special_practical_guidance}[]
 
 :numbered:
 include::insight.adoc[]
-
-:numbered:
-include::structure-and-documenting.adoc[]
-
-:numbered:
-include::{special_strudoc}[]
-
-:numbered:
-include::data-services.adoc[]
-
-:numbered:
-include::{special_data_services}[]
-
-:numbered:
-include::user-portals.adoc[]
-
-:numbered:
-include::{special_user_portals}[]
-
-:numbered:
-include::data-governance.adoc[]
-
-:numbered:
-include::{special_data_governance}[]
+// several more chapters are linked to in insight 
 
 :numbered!:
 include::acknowledgements.adoc[]
