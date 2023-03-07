@@ -18,4 +18,6 @@ The primary focus of this <<dmh,DMH>> is on the management of <<glossary-dynamic
 
 The document has 4 main pillars: overview, practical guide, insight and references. The overview gives a summery of the most important data management principles. In the practical guide data producers are provided with practical guidance to FAIR data management at their respective institution. Further details and a deeper understanding of FAIR data management principles is provided in insight. 
 
+The <<dmh,DMH>> is a strategic governing document and should be used as part of the quality framework the organisation is using. 
+
 // 'FAIR' should be in the glossary. 
