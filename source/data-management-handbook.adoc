@@ -14,38 +14,21 @@ include::{title_page}[]
 
 :numbered:
 include::summary.adoc[]
-
-:numbered:
-include::{special_intro}[]
+// several more chapters are linked in summary.adoc
 
 :numbered:
 include::practical-guide.adoc[]
-
-:numbered:
-include::acdd-elements.adoc[]
-
-:numbered:
-include::{spec_default_global_attrs}[]
-
-:numbered:
-include::add_metadata_python_script_example.adoc[]
-
-:numbered:
-include::register_context.adoc[]
-
-:numbered:
-include::search_context.adoc[]
-
-// optional subchapter that can be used as a checklist for data managers.
-
-:numbered:
-include::{special_practical_guidance}[]
-
+// several more chapters are linked in practical-guide.adoc
 
 :numbered:
 include::insight.adoc[]
-// several more chapters are linked to in insight 
+// several more chapters are linked in insight.adoc
 
+:numbered:
+include::references.adoc[]
+
+
+// should some of the chapters below go to insight? 
 :numbered!:
 include::acknowledgements.adoc[]
 
