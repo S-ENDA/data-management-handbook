@@ -449,9 +449,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_introduction">1. Introduction</a></li>
 <li><a href="#summary">2. Summary</a>
 <ul class="sectlevel2">
-<li><a href="#specialized-part-of-introduction">2.1. Summary of the data management at (insert organisation name here)</a>
+<li><a href="#PrinciplesDataManagement">2.1. The principles of data management for dynamic geodata</a>
 <ul class="sectlevel3">
-<li><a href="#data-management-roles-at">2.1.1. Data Management roles</a></li>
+<li><a href="#dataset">2.1.1. Dataset</a></li>
+<li><a href="#metadata">2.1.2. Metadata</a></li>
+</ul>
+</li>
+<li><a href="#specialized-part-of-introduction">2.2. Summary of the data management at (insert organisation name here)</a>
+<ul class="sectlevel3">
+<li><a href="#data-management-roles-at">2.2.1. Data Management roles</a></li>
 </ul>
 </li>
 </ul>
@@ -508,61 +514,65 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#insight">4. Insight</a>
-<ul class="sectlevel2">
-<li><a href="#human-roles">4.1. Human roles in data management</a>
 <ul class="sectlevel3">
-<li><a href="#human-roles-context">4.1.1. Context</a></li>
-<li><a href="#user-definitions">4.1.2. User definitions</a>
+<li><a href="#external-requirements">4.1. External data management requirements and forcing mechanisms</a></li>
+<li><a href="#value-chain">4.2. The data value chain</a></li>
+<li><a href="#metadata">4.3. Metadata</a></li>
+<li><a href="#fair-data-management-model">4.4. A data management model based on the FAIR principles</a></li>
+<li><a href="#human-roles">4.5. Human roles in data management</a>
+<ul class="sectlevel3">
+<li><a href="#human-roles-context">4.5.1. Context</a></li>
+<li><a href="#user-definitions">4.5.2. User definitions</a>
 <ul class="sectlevel4">
-<li><a href="#data-consumer">4.1.2.1. Data consumers</a>
+<li><a href="#data-consumer">4.5.2.1. Data consumers</a>
 <ul class="sectlevel5">
-<li><a href="#advanced-consumers">4.1.2.1.1. Advanced consumers</a></li>
-<li><a href="#intermediate-consumers">4.1.2.1.2. Intermediate consumers</a></li>
-<li><a href="#simple-consumers">4.1.2.1.3. Simple consumers</a></li>
+<li><a href="#advanced-consumers">4.5.2.1.1. Advanced consumers</a></li>
+<li><a href="#intermediate-consumers">4.5.2.1.2. Intermediate consumers</a></li>
+<li><a href="#simple-consumers">4.5.2.1.3. Simple consumers</a></li>
 </ul>
 </li>
-<li><a href="#data-producers">4.1.2.2. Data producers</a></li>
-<li><a href="#data-management-roles">4.1.2.3. Data Management Roles</a></li>
+<li><a href="#data-producers">4.5.2.2. Data producers</a></li>
+<li><a href="#data-management-roles">4.5.2.3. Data Management Roles</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#summary-requirements">4.2. Summary of data management requirements</a></li>
-<li><a href="#structuring-and-documenting">4.3. Structuring and Documenting Data</a>
+<li><a href="#summary-requirements">4.6. Summary of data management requirements</a></li>
+<li><a href="#structuring-and-documenting">4.7. Structuring and Documenting Data</a>
 <ul class="sectlevel3">
-<li><a href="#specialized-struct-and-doc">4.3.1. Structuring and documenting data at [insert organisation here]</a></li>
-<li><a href="#Current-practice">4.3.2. Current practice in structuring and documenting data</a></li>
-<li><a href="#_planned_developments_in_the_near_term_2_years">4.3.3. Planned developments in the near-term (&lt; 2 years)</a></li>
-<li><a href="#_expected_evolution_in_the_longer_term_2_years">4.3.4. Expected evolution in the longer term (&gt; 2 years)</a></li>
+<li><a href="#specialized-struct-and-doc">4.7.1. Structuring and documenting data at [insert organisation here]</a></li>
+<li><a href="#Current-practice">4.7.2. Current practice in structuring and documenting data</a></li>
+<li><a href="#_planned_developments_in_the_near_term_2_years">4.7.3. Planned developments in the near-term (&lt; 2 years)</a></li>
+<li><a href="#_expected_evolution_in_the_longer_term_2_years">4.7.4. Expected evolution in the longer term (&gt; 2 years)</a></li>
 </ul>
 </li>
-<li><a href="#data-services">4.4. Data Services</a>
+<li><a href="#data-services">4.8. Data Services</a>
 <ul class="sectlevel3">
-<li><a href="#_legacy">4.4.1. Legacy</a></li>
-<li><a href="#_planned_developments_in_near_term_2_years">4.4.2. Planned developments in near-term (&lt; 2 years)</a></li>
-<li><a href="#_expected_evolution_in_the_longer_term_2_years_2">4.4.3. Expected evolution in the longer term (&gt; 2 years)</a></li>
+<li><a href="#_legacy">4.8.1. Legacy</a></li>
+<li><a href="#_planned_developments_in_near_term_2_years">4.8.2. Planned developments in near-term (&lt; 2 years)</a></li>
+<li><a href="#_expected_evolution_in_the_longer_term_2_years_2">4.8.3. Expected evolution in the longer term (&gt; 2 years)</a></li>
 </ul>
 </li>
-<li><a href="#user-portals">4.5. User Portals and Documentation</a>
+<li><a href="#user-portals">4.9. User Portals and Documentation</a>
 <ul class="sectlevel3">
-<li><a href="#example">4.5.1. Current implementation</a></li>
-<li><a href="#_planned_developments_in_near_term_2_years_2">4.5.2. Planned developments in near-term (&lt; 2 years)</a></li>
-<li><a href="#_expected_evolution_in_the_longer_term_2_years_3">4.5.3. Expected evolution in the longer term (&gt; 2 years)</a></li>
+<li><a href="#example">4.9.1. Current implementation</a></li>
+<li><a href="#_planned_developments_in_near_term_2_years_2">4.9.2. Planned developments in near-term (&lt; 2 years)</a></li>
+<li><a href="#_expected_evolution_in_the_longer_term_2_years_3">4.9.3. Expected evolution in the longer term (&gt; 2 years)</a></li>
 </ul>
 </li>
-<li><a href="#data-governance">4.6. Data Governance</a>
+<li><a href="#data-governance">4.10. Data Governance</a>
 <ul class="sectlevel3">
-<li><a href="#specialized-datagov">4.6.1. Data governance at [insert organisation here]</a></li>
-<li><a href="#current-datagov">4.6.2. Current implementation</a>
+<li><a href="#specialized-datagov">4.10.1. Data governance at [insert organisation here]</a></li>
+<li><a href="#current-datagov">4.10.2. Current implementation</a>
 <ul class="sectlevel4">
-<li><a href="#_organisational_roles">4.6.2.1. Organisational Roles</a></li>
-<li><a href="#_status_dmh">4.6.2.2. Status DMH</a></li>
-<li><a href="#_status_discovery_metadata">4.6.2.3. Status Discovery metadata</a></li>
-<li><a href="#_status_dmp">4.6.2.4. Status DMP</a></li>
+<li><a href="#_organisational_roles">4.10.2.1. Organisational Roles</a></li>
+<li><a href="#_status_dmh">4.10.2.2. Status DMH</a></li>
+<li><a href="#_status_discovery_metadata">4.10.2.3. Status Discovery metadata</a></li>
+<li><a href="#_status_dmp">4.10.2.4. Status DMP</a></li>
 </ul>
 </li>
-<li><a href="#near-future-datagov">4.6.3. Planned developments in the near-term (&lt; 2 years)</a></li>
-<li><a href="#far-future-datagov">4.6.4. Expected evolution in the longer term (&gt; 2 years)</a></li>
+<li><a href="#near-future-datagov">4.10.3. Planned developments in the near-term (&lt; 2 years)</a></li>
+<li><a href="#far-future-datagov">4.10.4. Expected evolution in the longer term (&gt; 2 years)</a></li>
 </ul>
 </li>
 </ul>
@@ -629,41 +639,137 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="summary"><a class="anchor" href="#summary"></a>2. Summary</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="PrinciplesDataManagement"><a class="anchor" href="#PrinciplesDataManagement"></a>2.1. The principles of data management for dynamic geodata</h3>
 <div class="paragraph">
-<p>The primary focus of this <a href="#dmh">DMH</a> is on the management of <a href="#glossary-dynamic-geodata">dynamic geodata</a>. <a href="#glossary-dynamic-geodata">Dynamic geodata</a> is weather, environment and climate-related data that changes in space and time and is thus descriptive of processes in nature. Examples are weather observations, weather forecasts, pollution (environmental toxins) in water, air and sea, water flow in rivers, driving conditions on the roads. <a href="#glossary-dynamic-geodata">Dynamic geodata</a> provides important constraints for many decision-making processes and activities in society.</p>
+<p>Principles of standardised data documentation, publication, sharing and preservation have been formalised in the <a href="#glossary-fair-principles">FAIR</a> Guiding Principles for scientific data management and stewardship [<a href="https://www.nature.com/articles/sdata201618">RD3</a>] through a process facilitated by <a href="#force11">FORCE11</a>. FAIR stands for findability, accessibility, <a href="#glossary-interoperability">interoperability</a> and reusability.</p>
 </div>
 <div class="paragraph">
-<p>The intended audience for this DMH is any personell involved in the process of making data available for the end user. This process can be viewed as a value chain that moves from the producer of the data to the data consumer (i.e., the end user).</p>
+<p>By following the <a href="#fair">FAIR</a> principles it is easier to obtain a common approach to <a href="#glossary-data-management">data management</a>, or a <a href="#glossary-unified-data-management">unified data management</a> model. One of the main motivations for implementing a <a href="#glossary-unified-data-management">unified data management</a> is to better serve the users of the data. Primarily, this can be approached by making user needs and requirements the guide for determining what data we provide and how. For example, it will be described below how the specification of <a href="#glossary-dataset">datasets</a> should be determined. By implementing the data management practices described here, it is expected that users will experience:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ease of discovering, viewing and accessing <a href="#glossary-dataset">datasets</a>;</p>
+</li>
+<li>
+<p>Standardised ways of accessing data, including downloading or streaming data, with reduced need for special solutions on the user side;</p>
+</li>
+<li>
+<p>Reduced storage needs;</p>
+</li>
+<li>
+<p>Simple and standard access to remote <a href="#glossary-dataset">datasets</a> and catalogues, with own data visualisation and analysis tools;</p>
+</li>
+<li>
+<p>Ability to compare and combine data from internal and external sources;</p>
+</li>
+<li>
+<p>Ability to apply common data transformations, like spatial, temporal and variables subsetting and reprojection, before downloading anything;</p>
+</li>
+<li>
+<p>Possibility to build specialized metadata catalogues and data portals targeting a specific user community.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="dataset"><a class="anchor" href="#dataset"></a>2.1.1. Dataset</h4>
 <div class="paragraph">
-<p>The purpose of the Data Management Handbook (<a href="#dmh">DMH</a>) is threefold:</p>
+<p>A <a href="#glossary-dataset">dataset</a> is a collection of data. In the context of the <a href="#glossary-data-management">data management</a> model, the storage mode of the <a href="#glossary-dataset">dataset</a> is irrelevant, since access mechanisms can be decoupled from the storage layer as experienced by a data consumer. Typically, a <a href="#glossary-dataset">dataset</a> represents a number of variables in time and space. A more detailed definition is provided in the <a href="#glossary-glossary">Glossary of Terms</a>. In order to best serve the data through <a href="#web-service">web services</a>, the following principles are useful for guiding the <a href="#glossary-dataset">dataset</a> definition:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>to provide an overview of the principles for data management to be employed;</p>
+<p>A <a href="#glossary-dataset">dataset</a> can be a collection of variables stored in, for example, a relational database or as flat files;</p>
 </li>
 <li>
-<p>to help personnel identify their roles and responsibilities for good data management; and</p>
+<p>A <a href="#glossary-dataset">dataset</a> is defined as a number of spatial and/or temporal variables;</p>
 </li>
 <li>
-<p>to provide personnel with practical guidelines for carrying out good data management.</p>
+<p>A <a href="#glossary-dataset">dataset</a> should be defined by the information content and not the production method;</p>
+</li>
+<li>
+<p>A good <a href="#glossary-dataset">dataset</a> does not mix <a href="#glossary-feature-type">feature types</a>, i.e., trajectories and gridded data should not be present in the same <a href="#glossary-dataset">dataset</a>.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p><a href="#glossary-data-management"><em>Data management</em></a> is the term used to describe the handling of data in a systematic and cost-effective manner. The data management regime should be continuously evolving, to reflect the evolving nature of data collection. Therefore this <a href="#dmh">DMH</a> is a living document that will be revised and updated from time to time in order to maintain its relevance.</p>
+<p>Point 3 implies that the output of, e.g., a numerical model may be divided into several <a href="#glossary-dataset">datasets</a> that are related. This is also important in order to efficiently serve the data through <a href="#glossary-webservice">web services</a>. For instance, model variables defined on different vertical coordinates should be separated as <a href="#glossary-linked-data">linked datasets</a>, since some <a href="#ogc">OGC</a> services (e.g., <a href="#wms">WMS</a>) are unable to handle mixed coordinates in the same <a href="#glossary-dataset">dataset</a>. One important linked dataset relation is the parent-child relationship. In the numerical model example, the parent dataset would be the model simulation. This (parent) dataset encompasses all datasets created by the model simulation such as, e.g., two NetCDF-CF files (child datasets) with different information content.</p>
 </div>
 <div class="paragraph">
-<p>The <a href="#dmh">DMH</a> is a strategic governing document and should be used as part of the quality framework the organisation is using.</p>
+<p>Most importantly, a <a href="#glossary-dataset">dataset</a> should be defined to meet the consumer needs. This means that the specification of a <a href="#glossary-dataset">dataset</a> should follow not only the content guidelines just listed, but also address the consumer needs for data delivery, security and preservation.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="metadata"><a class="anchor" href="#metadata"></a>2.1.2. Metadata</h4>
+<div class="paragraph">
+<p>Metadata is a broad concept. In our <a href="#glossary-data-management">data management</a> model the term "metadata" is used in several contexts, specifically the five categories that are briefly described in <a href="#table-metadata">Table 1</a>.</p>
+</div>
+<table id="table-metadata" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Brief introduction to different types of metadata.</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="discovery-metadata"></a>Discovery metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to find relevant data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Discovery metadata are also called index metadata and are a digital version of the library index card. They describe who did what, where and when, how to access data and potential constraints on the data. They shall also link to further information on the data, such as <a href="#site-metadata">site metadata</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#ISO-19115">ISO 19115</a><br>
+<a href="#gcmd">GCMD</a>/<a href="#dif">DIF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="use-metadata"></a>Use metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to understand data found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use metadata describes the actual content of a <a href="#glossary-dataset">dataset</a> and how it is encoded. The purpose is to enable the user to understand the data without any further communication. They describe the content of variables using standardised vocabularies, units of variables, encoding of missing values, map projections, etc.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#cf">Climate and Forecast (CF) Convention</a><br>
+<a href="#bufr">BUFR</a><br>
+<a href="#grib">GRIB</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="site-metadata"></a>Site metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to understand data found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Site metadata are used to describe the context of observational data. They describe the location of an observation, the instrumentation, procedures, etc. To a certain extent they overlap with <a href="#discovery-metadata">discovery metadata</a>, but also extend discovery metadata. Site metadata can be used for observation network design. Site metadata can be considered a type of <a href="#use-metadata">use metadata</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#wigos">WIGOS</a><br>
+<a href="#ogc-om">OGC O&amp;M</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="configuration-metadata"></a>Configuration metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to tune portal services for <a href="#glossary-dataset">datasets</a> intended for data consumers (e.g., WMS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration metadata are used to improve the services offered through a portal to the user community. This can, e.g., be how to best visualise a <a href="#glossary-product">product</a>.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="system-metadata"></a>System metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to understand the technical structure of the <a href="#glossary-data-management">data management</a> system and track changes in it</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System metadata covers, e.g., technical details of the storage system, <a href="#glossary-web-service">web services</a>, their purpose and how they interact with other components of the <a href="#glossary-data-management">data management</a> system, available and consumed storage, number of users and other KPI elements etc.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The tools and facilities used to manage the information for efficient discovery and use are further described in <a href="#structuring-and-documenting">Section 4.7</a>.</p>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="specialized-part-of-introduction"><a class="anchor" href="#specialized-part-of-introduction"></a>2.1. Summary of the data management at (insert organisation name here)</h3>
+<h3 id="specialized-part-of-introduction"><a class="anchor" href="#specialized-part-of-introduction"></a>2.2. Summary of the data management at (insert organisation name here)</h3>
 <div class="paragraph">
 <p>​</p>
 </div>
 <div class="sect3">
-<h4 id="data-management-roles-at"><a class="anchor" href="#data-management-roles-at"></a>2.1.1. Data Management roles</h4>
+<h4 id="data-management-roles-at"><a class="anchor" href="#data-management-roles-at"></a>2.2.1. Data Management roles</h4>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -731,7 +837,7 @@ This might change if "<a href="https://github.com/hmpf/easydmp/issues/226">Hoste
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Define your dataset (see <a href="#glossary-dataset">dataset</a> and <a href="#dataset">[dataset]</a>)</p>
+<p>Define your dataset (see <a href="#glossary-dataset">dataset</a> and <a href="#dataset">Section 2.1.1</a>)</p>
 </li>
 <li>
 <p>Create a NetCDF-CF file (see <a href="#data-as-netcdf-cf">Section 3.2.2</a>)</p>
@@ -1660,10 +1766,140 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 <div class="sect1">
 <h2 id="insight"><a class="anchor" href="#insight"></a>4. Insight</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="human-roles"><a class="anchor" href="#human-roles"></a>4.1. Human roles in data management</h3>
+<div class="paragraph">
+<p>The purpose of the insight chapter is to provide the reader with more details regarding FAIR data management and this is described along 4 pillars: structuring and documenting data; data services; user portals and documentation; and data governance.</p>
+</div>
 <div class="sect3">
-<h4 id="human-roles-context"><a class="anchor" href="#human-roles-context"></a>4.1.1. Context</h4>
+<h4 id="external-requirements"><a class="anchor" href="#external-requirements"></a>4.1. External data management requirements and forcing mechanisms</h4>
+<div class="paragraph">
+<p>Any organisation that strives to implement <a href="#glossary-fair-principles">FAIR</a> data management model has to relate to external forcing mechanisms concerning <a href="#glossary-data-management">data management</a> at several levels. At the national level, the organisation must comply with national regulations as decided by the government. Some of these are indications of expected behaviour (e.g., <a href="#oecd">OECD</a> regulations) and some are implemented through a legal framework. The Norwegian government has over time promoted free and open sharing of public data. Mechanisms for how to do this are governed by the <a href="#glossary-geodataloven">Geodataloven</a> (implemented as <a href="#glossary-geonorge">Geonorge</a>), which is a national implementation of the European <a href="#inspire">INSPIRE directive</a> (to be amended in 2019). <a href="#inspire">INSPIRE</a> defines a federated multinational <a href="#glossary-spatial-data-infrastructure">Spatial Data Infrastructure</a> (<a href="#sdi">SDI</a>) for the European Union, similar to <a href="#nsdi">NSDI</a> in the USA or <a href="#unsdi">UNSDI</a> under the United Nations. The goal is to provide a standardised access to data and provide the necessary tools to be able to work with the data in a unified manner. In short, these legal frameworks require standardised documentation (at discovery and use level; these concepts are described later) and access (through specified protocols) to the data identified.</p>
+</div>
+<div class="paragraph">
+<p>Other external requirements and forcing mechanisms that are organisation-specific are provided in <a href="#specialized-external-requirements">[specialized-external-requirements]</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="value-chain"><a class="anchor" href="#value-chain"></a>4.2. The data value chain</h4>
+<div class="paragraph">
+<p>The process of getting the data from the data producer to the consumer can be viewed as a value chain. An example of a data value chain is presented in <a href="#img-value-chain">Figure 1</a>. Typically, data from a wide variety of providers are used in the value chain. Traditionally, the data used have been transmitted on request from one <a href="#glossary-data-centre">data centre</a> to another, and used in the specific processing chains that requested the data. The focus on reuse of data in various contexts has been missing.</p>
+</div>
+<div id="img-value-chain" class="imageblock">
+<div class="content">
+<img src="data:image/png;base64,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" alt="Value chain" width="800">
+</div>
+<div class="title">Figure 1. Value chain for data.</div>
+</div>
+<div class="paragraph">
+<p>Datasets and metadata are what travels through the value chain. At the end of the <a href="#glossary-data-management">data management</a> value chain are the data consumers.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="metadata"><a class="anchor" href="#metadata"></a>4.3. Metadata</h4>
+<div class="paragraph">
+<p>Metadata is a broad concept. In our <a href="#glossary-data-management">data management</a> model the term "metadata" is used in several contexts, specifically the five categories that are briefly described in <a href="#table-metadata">Table 1</a>.</p>
+</div>
+<table id="table-metadata" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Brief introduction to different types of metadata.</caption>
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="discovery-metadata"></a>Discovery metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to find relevant data</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Discovery metadata are also called index metadata and are a digital version of the library index card. They describe who did what, where and when, how to access data and potential constraints on the data. They shall also link to further information on the data, such as <a href="#site-metadata">site metadata</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#ISO-19115">ISO 19115</a><br>
+<a href="#gcmd">GCMD</a>/<a href="#dif">DIF</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="use-metadata"></a>Use metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to understand data found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use metadata describes the actual content of a <a href="#glossary-dataset">dataset</a> and how it is encoded. The purpose is to enable the user to understand the data without any further communication. They describe the content of variables using standardised vocabularies, units of variables, encoding of missing values, map projections, etc.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#cf">Climate and Forecast (CF) Convention</a><br>
+<a href="#bufr">BUFR</a><br>
+<a href="#grib">GRIB</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="site-metadata"></a>Site metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to understand data found</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Site metadata are used to describe the context of observational data. They describe the location of an observation, the instrumentation, procedures, etc. To a certain extent they overlap with <a href="#discovery-metadata">discovery metadata</a>, but also extend discovery metadata. Site metadata can be used for observation network design. Site metadata can be considered a type of <a href="#use-metadata">use metadata</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#wigos">WIGOS</a><br>
+<a href="#ogc-om">OGC O&amp;M</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="configuration-metadata"></a>Configuration metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to tune portal services for <a href="#glossary-dataset">datasets</a> intended for data consumers (e.g., WMS)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Configuration metadata are used to improve the services offered through a portal to the user community. This can, e.g., be how to best visualise a <a href="#glossary-product">product</a>.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="system-metadata"></a>System metadata</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used to understand the technical structure of the <a href="#glossary-data-management">data management</a> system and track changes in it</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System metadata covers, e.g., technical details of the storage system, <a href="#glossary-web-service">web services</a>, their purpose and how they interact with other components of the <a href="#glossary-data-management">data management</a> system, available and consumed storage, number of users and other KPI elements etc.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The tools and facilities used to manage the information for efficient discovery and use are further described in <a href="#structuring-and-documenting">Section 4.7</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="fair-data-management-model"><a class="anchor" href="#fair-data-management-model"></a>4.4. A data management model based on the FAIR principles</h4>
+<div class="paragraph">
+<p>The <a href="#glossary-data-management">data management</a> model is built upon the following principles:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Standardisation</strong> – compliance with established international standards;</p>
+</li>
+<li>
+<p><strong><a href="#glossary-interoperability">Interoperability</a></strong> – enabling machine-to-machine interfaces including standardised documentation and encoding of data;</p>
+</li>
+<li>
+<p><strong>Integrity</strong> – ensuring that data and data access can be maintained over time, and ensuring that the consumer receives the same data at any time of request;</p>
+</li>
+<li>
+<p><strong>Traceability</strong> – documentation of the <a href="#glossary-data-provenance">provenance</a> of a <a href="#glossary-dataset">dataset</a>, i.e., all actions taken to produce and maintain the <a href="#glossary-dataset">dataset</a> and the usage of the data in downstream systems;</p>
+</li>
+<li>
+<p><strong>Modularisation</strong> – enabling replacement of one component of the system without necessitating other changes.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The model’s basic functions fall into three main categories:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Documentation of data</strong> using <a href="#glossary-discovery-metadata">discovery</a> and <a href="#glossary-use-metadata">use metadata</a>. The documentation identifies who, what, when, where, and how, and shall make it easy for consumers to find and understand data. This requires application of information containers and utilisation of <a href="#glossary-controlled-vocabulary">controlled vocabularies</a> and <a href="#glossary-ontology">ontologies</a> where textual representation is required. It also covers the topic of <a href="#glossary-data-provenance">data provenance</a> which is used to describe the origin and all actions done on a <a href="#glossary-dataset">dataset</a>. <a href="#glossary-data-provenance">Data provenance</a> is closely linked with <a href="#glossary-workflow-management">workflow management</a>. Furthermore, it covers the relationship between <a href="#glossary-dataset">datasets</a>. Application of <a href="#glossary-ontology">ontologies</a> in data documentation is closely linked to the concept of <a href="#glossary-linked-data">linked data</a>.</p>
+</li>
+<li>
+<p><strong>Publication and sharing of data</strong> focuses on making data accessible to consumers internally and externally. Application of standardised approaches is vital, along with cost effective solutions that are sustainable. Direct integration of data in applications for analysis through data streaming minimises the complexity and overhead in dissemination solutions. This category also covers persistent identifiers for data.</p>
+</li>
+<li>
+<p><strong>Preservation of data</strong> includes short and long term management of data, which secures access and availability throughout the lifespan of the data. Good solutions in this area depend on expected and actual usage of the data. Preservation of data includes the concept of data life cycle, i.e., the documented flow of data from initial storage through to obsolescence and permanent archiving (or deletion) and preserving the metadata for the same data (even after deleting).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="human-roles"><a class="anchor" href="#human-roles"></a>4.5. Human roles in data management</h3>
+<div class="sect3">
+<h4 id="human-roles-context"><a class="anchor" href="#human-roles-context"></a>4.5.1. Context</h4>
 <div class="paragraph">
 <p>Data is processed and interpreted to generate knowledge (e.g., about the weather) for end users. The knowledge can be presented as information in the form of actual data, illustrations, text or other forms of communication. In this context, an illustration is a representation of data, whereas data means the numerical values needed to analyse and interpret a natural process (i.e., calibrated or with calibration information; it must be possible to understand the meaning of the numerical value from the available and machine-readable information).</p>
 </div>
@@ -1687,7 +1923,7 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 </div>
 </div>
 <div class="sect3">
-<h4 id="user-definitions"><a class="anchor" href="#user-definitions"></a>4.1.2. User definitions</h4>
+<h4 id="user-definitions"><a class="anchor" href="#user-definitions"></a>4.5.2. User definitions</h4>
 <div class="paragraph">
 <p>We define two types of users:</p>
 </div>
@@ -1710,12 +1946,12 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 </div>
 </div>
 <div class="sect4">
-<h5 id="data-consumer"><a class="anchor" href="#data-consumer"></a>4.1.2.1. Data consumers</h5>
+<h5 id="data-consumer"><a class="anchor" href="#data-consumer"></a>4.5.2.1. Data consumers</h5>
 <div class="paragraph">
 <p>We split between three types of data consumers: (1) advanced, (2) intermediate, and (3) simple. These are defined below.</p>
 </div>
 <div class="sect5">
-<h6 id="advanced-consumers"><a class="anchor" href="#advanced-consumers"></a>4.1.2.1.1. Advanced consumers</h6>
+<h6 id="advanced-consumers"><a class="anchor" href="#advanced-consumers"></a>4.5.2.1.1. Advanced consumers</h6>
 <div class="paragraph">
 <p>Advanced consumers require information in the form of data and metadata (including provenance) to gain a full understanding of what data exists and how to use it (discovery and use metadata), and to automatize the generation of derived data (new knowledge generation), verification (of information), and validation of data products.</p>
 </div>
@@ -1741,7 +1977,7 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 </div>
 </div>
 <div class="sect5">
-<h6 id="intermediate-consumers"><a class="anchor" href="#intermediate-consumers"></a>4.1.2.1.2. Intermediate consumers</h6>
+<h6 id="intermediate-consumers"><a class="anchor" href="#intermediate-consumers"></a>4.5.2.1.2. Intermediate consumers</h6>
 <div class="paragraph">
 <p>Intermediate consumers need enough information to find data and understand if it can answer their question(s) (discovery and use metadata). Also, they often want to cross reference a dataset with another dataset or metadata for inter-comparative verification of information.</p>
 </div>
@@ -1779,7 +2015,7 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 </div>
 </div>
 <div class="sect5">
-<h6 id="simple-consumers"><a class="anchor" href="#simple-consumers"></a>4.1.2.1.3. Simple consumers</h6>
+<h6 id="simple-consumers"><a class="anchor" href="#simple-consumers"></a>4.5.2.1.3. Simple consumers</h6>
 <div class="paragraph">
 <p>Simple consumers do not have any prior knowledge about the data. Information in the form of text or illustrations is sufficient for their decision making. They do not need to understand either data or metadata, and they are most likely looking for answers to simple questions.</p>
 </div>
@@ -1832,21 +2068,21 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 </div>
 </div>
 <div class="sect4">
-<h5 id="data-producers"><a class="anchor" href="#data-producers"></a>4.1.2.2. Data producers</h5>
+<h5 id="data-producers"><a class="anchor" href="#data-producers"></a>4.5.2.2. Data producers</h5>
 <div class="paragraph">
 <p>A producer is an advanced consumer at one level of data that generate new information at a higher level. This new information could be in the form of actual data or simple information, such as an illustration or a text summary. It is essential that any information can be traced back to the source(s).</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="data-management-roles"><a class="anchor" href="#data-management-roles"></a>4.1.2.3. Data Management Roles</h5>
+<h5 id="data-management-roles"><a class="anchor" href="#data-management-roles"></a>4.5.2.3. Data Management Roles</h5>
 <div class="paragraph">
-<p>Between the data providers and data consumers are the processes that manage and deliver the datasets (cf. <a href="#img-value-chain">[img-value-chain]</a>). A number of human roles may be defined with responsibilities that, together, ensure that these processes are carried out in accordance with the data management requirements of the organisation. The definition and filling of these roles depend heavily on the particular organisation, and each organisation must devise its own best solution.</p>
+<p>Between the data providers and data consumers are the processes that manage and deliver the datasets (cf. <a href="#img-value-chain">Figure 1</a>). A number of human roles may be defined with responsibilities that, together, ensure that these processes are carried out in accordance with the data management requirements of the organisation. The definition and filling of these roles depend heavily on the particular organisation, and each organisation must devise its own best solution.</p>
 </div>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="summary-requirements"><a class="anchor" href="#summary-requirements"></a>4.2. Summary of data management requirements</h3>
+<h3 id="summary-requirements"><a class="anchor" href="#summary-requirements"></a>4.6. Summary of data management requirements</h3>
 <div class="paragraph">
 <p>The data management regime described in this DMH follows the Arctic Data centre model and shall ensure that:</p>
 </div>
@@ -1941,7 +2177,7 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 </div>
 </div>
 <div class="sect2">
-<h3 id="structuring-and-documenting"><a class="anchor" href="#structuring-and-documenting"></a>4.3. Structuring and Documenting Data</h3>
+<h3 id="structuring-and-documenting"><a class="anchor" href="#structuring-and-documenting"></a>4.7. Structuring and Documenting Data</h3>
 <div class="paragraph">
 <p><strong>Purpose</strong></p>
 </div>
@@ -1955,16 +2191,16 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 <p><strong>Implementation</strong></p>
 </div>
 <div class="paragraph">
-<p>An essential prerequisite for structuring and documenting data is the specification of the <a href="#glossary-dataset">dataset(s)</a>, cf. <a href="#dataset">[dataset]</a>. The <a href="#glossary-dataset">dataset</a> is the basic building block of our <a href="#fair-data-management-model">data management model</a>; all the documentation and services described in this <a href="#dmh">DMH</a> are built on <a href="#glossary-dataset">datasets</a>. The dataset specification is the first step in structuring one&#8217;s data for efficient management, and it is mandatory.</p>
+<p>An essential prerequisite for structuring and documenting data is the specification of the <a href="#glossary-dataset">dataset(s)</a>, cf. <a href="#dataset">Section 2.1.1</a>. The <a href="#glossary-dataset">dataset</a> is the basic building block of our <a href="#fair-data-management-model">data management model</a>; all the documentation and services described in this <a href="#dmh">DMH</a> are built on <a href="#glossary-dataset">datasets</a>. The dataset specification is the first step in structuring one&#8217;s data for efficient management, and it is mandatory.</p>
 </div>
 <div class="sect3">
-<h4 id="specialized-struct-and-doc"><a class="anchor" href="#specialized-struct-and-doc"></a>4.3.1. Structuring and documenting data at [insert organisation here]</h4>
+<h4 id="specialized-struct-and-doc"><a class="anchor" href="#specialized-struct-and-doc"></a>4.7.1. Structuring and documenting data at [insert organisation here]</h4>
 
 </div>
 <div class="sect3">
-<h4 id="Current-practice"><a class="anchor" href="#Current-practice"></a>4.3.2. Current practice in structuring and documenting data</h4>
+<h4 id="Current-practice"><a class="anchor" href="#Current-practice"></a>4.7.2. Current practice in structuring and documenting data</h4>
 <table id="table-localdatatypes" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Data types available at [insert institution here], with the fileformats supported. The primary fileformat is marked in <strong>bold</strong></caption>
+<caption class="title">Table 3. Data types available at [insert institution here], with the fileformats supported. The primary fileformat is marked in <strong>bold</strong></caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -1998,16 +2234,16 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 </table>
 </div>
 <div class="sect3">
-<h4 id="_planned_developments_in_the_near_term_2_years"><a class="anchor" href="#_planned_developments_in_the_near_term_2_years"></a>4.3.3. Planned developments in the near-term (&lt; 2 years)</h4>
+<h4 id="_planned_developments_in_the_near_term_2_years"><a class="anchor" href="#_planned_developments_in_the_near_term_2_years"></a>4.7.3. Planned developments in the near-term (&lt; 2 years)</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_expected_evolution_in_the_longer_term_2_years"><a class="anchor" href="#_expected_evolution_in_the_longer_term_2_years"></a>4.3.4. Expected evolution in the longer term (&gt; 2 years)</h4>
+<h4 id="_expected_evolution_in_the_longer_term_2_years"><a class="anchor" href="#_expected_evolution_in_the_longer_term_2_years"></a>4.7.4. Expected evolution in the longer term (&gt; 2 years)</h4>
 
 </div>
 </div>
 <div class="sect2">
-<h3 id="data-services"><a class="anchor" href="#data-services"></a>4.4. Data Services</h3>
+<h3 id="data-services"><a class="anchor" href="#data-services"></a>4.8. Data Services</h3>
 <div class="paragraph">
 <p><strong>Purpose</strong></p>
 </div>
@@ -2037,20 +2273,20 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 <p>When planning and implementing data services, there are a number of external requirements that constrain choices, especially if reuse of solutions nationally and internationally is intended and wanted for the data in question. At the national level, important constraints are imposed by the national implementation of the <a href="#inspire">INSPIRE</a> directive through Norge digitalt.</p>
 </div>
 <div class="sect3">
-<h4 id="_legacy"><a class="anchor" href="#_legacy"></a>4.4.1. Legacy</h4>
+<h4 id="_legacy"><a class="anchor" href="#_legacy"></a>4.8.1. Legacy</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_planned_developments_in_near_term_2_years"><a class="anchor" href="#_planned_developments_in_near_term_2_years"></a>4.4.2. Planned developments in near-term (&lt; 2 years)</h4>
+<h4 id="_planned_developments_in_near_term_2_years"><a class="anchor" href="#_planned_developments_in_near_term_2_years"></a>4.8.2. Planned developments in near-term (&lt; 2 years)</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_expected_evolution_in_the_longer_term_2_years_2"><a class="anchor" href="#_expected_evolution_in_the_longer_term_2_years_2"></a>4.4.3. Expected evolution in the longer term (&gt; 2 years)</h4>
+<h4 id="_expected_evolution_in_the_longer_term_2_years_2"><a class="anchor" href="#_expected_evolution_in_the_longer_term_2_years_2"></a>4.8.3. Expected evolution in the longer term (&gt; 2 years)</h4>
 
 </div>
 </div>
 <div class="sect2">
-<h3 id="user-portals"><a class="anchor" href="#user-portals"></a>4.5. User Portals and Documentation</h3>
+<h3 id="user-portals"><a class="anchor" href="#user-portals"></a>4.9. User Portals and Documentation</h3>
 <div class="paragraph">
 <p><strong>Purpose</strong></p>
 </div>
@@ -2064,7 +2300,7 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 <p><strong>Implementation of user portals at [institution]</strong></p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. User portals in use at [institution]</caption>
+<caption class="title">Table 4. User portals in use at [institution]</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -2089,20 +2325,20 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="example"><a class="anchor" href="#example"></a>4.5.1. Current implementation</h4>
+<h4 id="example"><a class="anchor" href="#example"></a>4.9.1. Current implementation</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_planned_developments_in_near_term_2_years_2"><a class="anchor" href="#_planned_developments_in_near_term_2_years_2"></a>4.5.2. Planned developments in near-term (&lt; 2 years)</h4>
+<h4 id="_planned_developments_in_near_term_2_years_2"><a class="anchor" href="#_planned_developments_in_near_term_2_years_2"></a>4.9.2. Planned developments in near-term (&lt; 2 years)</h4>
 
 </div>
 <div class="sect3">
-<h4 id="_expected_evolution_in_the_longer_term_2_years_3"><a class="anchor" href="#_expected_evolution_in_the_longer_term_2_years_3"></a>4.5.3. Expected evolution in the longer term (&gt; 2 years)</h4>
+<h4 id="_expected_evolution_in_the_longer_term_2_years_3"><a class="anchor" href="#_expected_evolution_in_the_longer_term_2_years_3"></a>4.9.3. Expected evolution in the longer term (&gt; 2 years)</h4>
 
 </div>
 </div>
 <div class="sect2">
-<h3 id="data-governance"><a class="anchor" href="#data-governance"></a>4.6. Data Governance</h3>
+<h3 id="data-governance"><a class="anchor" href="#data-governance"></a>4.10. Data Governance</h3>
 <div class="paragraph">
 <p><strong>Purpose</strong></p>
 </div>
@@ -2170,36 +2406,36 @@ requests.post('https://csw.s-enda.k8s.met.no', data=open(my_xml_request).read())
 <p>Currently, agencies funding R&amp;D (such as <a href="#nfr">NFR</a> and the EU) do not strictly require a DMP from the start of any project. However, for projects in the geosciences, data management is an issue that must be addressed, and the agencies strongly recommend a DMP solution. For example, NFR publishes <a href="https://www.forskningsradet.no/en/Adviser-research-policy/open-science/open-access-to-research-data/">guidelines</a> for the contents of a DMP, including links to tools (templates and online services); these guidelines are recommended for any data management project or activity and will in time become a requirement according to <a href="#nfr">NFR</a>.</p>
 </div>
 <div class="sect3">
-<h4 id="specialized-datagov"><a class="anchor" href="#specialized-datagov"></a>4.6.1. Data governance at [insert organisation here]</h4>
+<h4 id="specialized-datagov"><a class="anchor" href="#specialized-datagov"></a>4.10.1. Data governance at [insert organisation here]</h4>
 
 </div>
 <div class="sect3">
-<h4 id="current-datagov"><a class="anchor" href="#current-datagov"></a>4.6.2. Current implementation</h4>
+<h4 id="current-datagov"><a class="anchor" href="#current-datagov"></a>4.10.2. Current implementation</h4>
 <div class="sect4">
-<h5 id="_organisational_roles"><a class="anchor" href="#_organisational_roles"></a>4.6.2.1. Organisational Roles</h5>
+<h5 id="_organisational_roles"><a class="anchor" href="#_organisational_roles"></a>4.10.2.1. Organisational Roles</h5>
 
 </div>
 <div class="sect4">
-<h5 id="_status_dmh"><a class="anchor" href="#_status_dmh"></a>4.6.2.2. Status <a href="#dmh">DMH</a></h5>
+<h5 id="_status_dmh"><a class="anchor" href="#_status_dmh"></a>4.10.2.2. Status <a href="#dmh">DMH</a></h5>
 
 </div>
 <div class="sect4">
-<h5 id="_status_discovery_metadata"><a class="anchor" href="#_status_discovery_metadata"></a>4.6.2.3. Status <a href="#discovery-metadata">Discovery metadata</a></h5>
+<h5 id="_status_discovery_metadata"><a class="anchor" href="#_status_discovery_metadata"></a>4.10.2.3. Status <a href="#discovery-metadata">Discovery metadata</a></h5>
 
 </div>
 <div class="sect4">
-<h5 id="_status_dmp"><a class="anchor" href="#_status_dmp"></a>4.6.2.4. Status <a href="#dmp">DMP</a></h5>
+<h5 id="_status_dmp"><a class="anchor" href="#_status_dmp"></a>4.10.2.4. Status <a href="#dmp">DMP</a></h5>
 
 </div>
 </div>
 <div class="sect3">
-<h4 id="near-future-datagov"><a class="anchor" href="#near-future-datagov"></a>4.6.3. Planned developments in the near-term (&lt; 2 years)</h4>
+<h4 id="near-future-datagov"><a class="anchor" href="#near-future-datagov"></a>4.10.3. Planned developments in the near-term (&lt; 2 years)</h4>
 <div class="paragraph">
 <p>Revise DMH annually or when needed.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="far-future-datagov"><a class="anchor" href="#far-future-datagov"></a>4.6.4. Expected evolution in the longer term (&gt; 2 years)</h4>
+<h4 id="far-future-datagov"><a class="anchor" href="#far-future-datagov"></a>4.10.4. Expected evolution in the longer term (&gt; 2 years)</h4>
 <div class="paragraph">
 <p>Revise DMH annually or when needed.</p>
 </div>
@@ -2473,10 +2709,10 @@ GIS systems have lately evolved in distributed <a href="#glossary-spatial-data-i
 <div class="sect2">
 <h3 id="metadata"><a class="anchor" href="#metadata"></a>Metadata</h3>
 <div class="paragraph">
-<p>Metadata is a broad concept. In our <a href="#glossary-data-management">data management</a> model the term "metadata" is used in several contexts, specifically the five categories that are briefly described in <a href="#table-metadata">Table 3</a>.</p>
+<p>Metadata is a broad concept. In our <a href="#glossary-data-management">data management</a> model the term "metadata" is used in several contexts, specifically the five categories that are briefly described in <a href="#table-metadata">Table 1</a>.</p>
 </div>
 <table id="table-metadata" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. Brief introduction to different types of metadata.</caption>
+<caption class="title">Table 5. Brief introduction to different types of metadata.</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 25%;">
@@ -2529,7 +2765,7 @@ GIS systems have lately evolved in distributed <a href="#glossary-spatial-data-i
 </tbody>
 </table>
 <div class="paragraph">
-<p>The tools and facilities used to manage the information for efficient discovery and use are further described in <a href="#structuring-and-documenting">Section 4.3</a>.</p>
+<p>The tools and facilities used to manage the information for efficient discovery and use are further described in <a href="#structuring-and-documenting">Section 4.7</a>.</p>
 </div>
 </div>
 </div>
@@ -3165,7 +3401,7 @@ GIS systems have lately evolved in distributed <a href="#glossary-spatial-data-i
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-03-07 09:07:50 UTC
+Last updated 2023-03-07 09:20:37 UTC
 </div>
 </div>
 </body>
