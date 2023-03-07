@@ -1,5 +1,88 @@
 [[insight]]
 == Insight
+The purpose of the insight chapter is to provide the reader with more details regarding FAIR data management and this is described along 4 pillars: structuring and documenting data; data services; user portals and documentation; and data governance.
+
+[[external-requirements]]
+==== External data management requirements and forcing mechanisms
+
+Any organisation that strives to implement <<glossary-fair-principles,FAIR>> data management model has to relate to external forcing mechanisms concerning <<glossary-data-management,data management>> at several levels. At the national level, the organisation must comply with national regulations as decided by the government. Some of these are indications of expected behaviour (e.g., <<oecd,OECD>> regulations) and some are implemented through a legal framework. The Norwegian government has over time promoted free and open sharing of public data. Mechanisms for how to do this are governed by the <<glossary-geodataloven,Geodataloven>> (implemented as <<glossary-geonorge,Geonorge>>), which is a national implementation of the European <<inspire,INSPIRE directive>> (to be amended in 2019). <<inspire,INSPIRE>> defines a federated multinational <<glossary-spatial-data-infrastructure,Spatial Data Infrastructure>> (<<sdi,SDI>>) for the European Union, similar to <<nsdi,NSDI>> in the USA or <<unsdi,UNSDI>> under the United Nations. The goal is to provide a standardised access to data and provide the necessary tools to be able to work with the data in a unified manner. In short, these legal frameworks require standardised documentation (at discovery and use level; these concepts are described later) and access (through specified protocols) to the data identified.
+
+Other external requirements and forcing mechanisms that are organisation-specific are provided in <<specialized-external-requirements>>.
+
+[[value-chain]]
+==== The data value chain
+
+The process of getting the data from the data producer to the consumer can be viewed as a value chain. An example of a data value chain is presented in <<img-value-chain>>. Typically, data from a wide variety of providers are used in the value chain. Traditionally, the data used have been transmitted on request from one <<glossary-data-centre,data centre>> to another, and used in the specific processing chains that requested the data. The focus on reuse of data in various contexts has been missing.
+
+[#img-value-chain]
+.Value chain for data.
+image::value_chain.png[Value chain,800]
+
+Datasets and metadata are what travels through the value chain. At the end of the <<glossary-data-management,data management>> value chain are the data consumers.
+
+// should some of this be written here?
+[[metadata]]
+==== Metadata
+
+Metadata is a broad concept. In our <<glossary-data-management,data management>> model the term "metadata" is used in several contexts, specifically the five categories that are briefly described in <<table-metadata>>. 
+
+.Brief introduction to different types of metadata.
+[[table-metadata]]
+[%header, cols=4*]
+|===
+|Type
+|Purpose
+|Description
+|Examples
+
+|[[discovery-metadata]]Discovery metadata
+|Used to find relevant data
+|Discovery metadata are also called index metadata and are a digital version of the library index card. They describe who did what, where and when, how to access data and potential constraints on the data. They shall also link to further information on the data, such as <<site-metadata,site metadata>>.
+|<<ISO-19115,ISO 19115>> +
+<<gcmd,GCMD>>/<<dif,DIF>>
+
+|[[use-metadata]]Use metadata
+|Used to understand data found
+|Use metadata describes the actual content of a <<glossary-dataset,dataset>> and how it is encoded. The purpose is to enable the user to understand the data without any further communication. They describe the content of variables using standardised vocabularies, units of variables, encoding of missing values, map projections, etc.
+|<<cf,Climate and Forecast (CF) Convention>> +
+<<bufr,BUFR>> +
+<<grib,GRIB>>
+
+|[[site-metadata]]Site metadata
+|Used to understand data found
+|Site metadata are used to describe the context of observational data. They describe the location of an observation, the instrumentation, procedures, etc. To a certain extent they overlap with <<discovery-metadata,discovery metadata>>, but also extend discovery metadata. Site metadata can be used for observation network design. Site metadata can be considered a type of <<use-metadata,use metadata>>.
+|<<wigos,WIGOS>> +
+<<ogc-om,OGC O&M>>
+
+|[[configuration-metadata]]Configuration metadata
+|Used to tune portal services for <<glossary-dataset,datasets>> intended for data consumers (e.g., WMS)
+|Configuration metadata are used to improve the services offered through a portal to the user community. This can, e.g., be how to best visualise a <<glossary-product,product>>.
+|
+
+|[[system-metadata]]System metadata
+|Used to understand the technical structure of the <<glossary-data-management,data management>> system and track changes in it 
+|System metadata covers, e.g., technical details of the storage system, <<glossary-web-service,web services>>, their purpose and how they interact with other components of the <<glossary-data-management,data management>> system, available and consumed storage, number of users and other KPI elements etc.
+|
+|===
+
+The tools and facilities used to manage the information for efficient discovery and use are further described in <<structuring-and-documenting>>.
+
+[[fair-data-management-model]]
+==== A data management model based on the FAIR principles
+
+The <<glossary-data-management,data management>> model is built upon the following principles:
+
+* *Standardisation* – compliance with established international standards;
+* *<<glossary-interoperability,Interoperability>>* – enabling machine-to-machine interfaces including standardised documentation and encoding of data;
+* *Integrity* – ensuring that data and data access can be maintained over time, and ensuring that the consumer receives the same data at any time of request;
+* *Traceability* – documentation of the <<glossary-data-provenance,provenance>> of a <<glossary-dataset,dataset>>, i.e., all actions taken to produce and maintain the <<glossary-dataset,dataset>> and the usage of the data in downstream systems;
+* *Modularisation* – enabling replacement of one component of the system without necessitating other changes.
+
+The model’s basic functions fall into three main categories:
+
+1. *Documentation of data* using <<glossary-discovery-metadata,discovery>> and <<glossary-use-metadata,use metadata>>. The documentation identifies who, what, when, where, and how, and shall make it easy for consumers to find and understand data. This requires application of information containers and utilisation of <<glossary-controlled-vocabulary,controlled vocabularies>> and <<glossary-ontology,ontologies>> where textual representation is required. It also covers the topic of <<glossary-data-provenance,data provenance>> which is used to describe the origin and all actions done on a <<glossary-dataset,dataset>>. <<glossary-data-provenance,Data provenance>> is closely linked with <<glossary-workflow-management,workflow management>>. Furthermore, it covers the relationship between <<glossary-dataset,datasets>>. Application of <<glossary-ontology,ontologies>> in data documentation is closely linked to the concept of <<glossary-linked-data,linked data>>. 
+2. *Publication and sharing of data* focuses on making data accessible to consumers internally and externally. Application of standardised approaches is vital, along with cost effective solutions that are sustainable. Direct integration of data in applications for analysis through data streaming minimises the complexity and overhead in dissemination solutions. This category also covers persistent identifiers for data.
+3. *Preservation of data* includes short and long term management of data, which secures access and availability throughout the lifespan of the data. Good solutions in this area depend on expected and actual usage of the data. Preservation of data includes the concept of data life cycle, i.e., the documented flow of data from initial storage through to obsolescence and permanent archiving (or deletion) and preserving the metadata for the same data (even after deleting).
 
 
 :numbered:
