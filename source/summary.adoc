@@ -16,3 +16,6 @@ The purpose of the Data Management Handbook (<<dmh,DMH>>) is threefold:
 <<glossary-data-management,_Data management_>> is the term used to describe the handling of data in a systematic and cost-effective manner. The data management regime should be continuously evolving, to reflect the evolving nature of data collection. Therefore this <<dmh,DMH>> is a living document that will be revised and updated from time to time in order to maintain its relevance.
 
 The <<dmh,DMH>> is a strategic governing document and should be used as part of the quality framework the organisation is using. 
+
+:numbered:
+include::{special_intro}[]
