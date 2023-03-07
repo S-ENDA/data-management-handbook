@@ -1,4 +1,4 @@
-Structure of S-ENDA DMH:
+# Structure of S-ENDA Data Management Handbook
 
 Main structure is given by: data-management-handbook.adoc
 
