@@ -1,6 +1,6 @@
 Structure of S-ENDA DMH:
 
-Main structure is given by: data-management-handbook.adoc\
+Main structure is given by: data-management-handbook.adoc
 
 The handbook has 5 main chapters:\
 Introduction/Abstract: part of title_page.adoc\
