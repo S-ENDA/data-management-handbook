@@ -436,6 +436,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<script src="/assets/js/tocbot.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+
+<style>
+  #tocbot a.toc-link.node-name--H2{ font-weight:700; }
+  @media screen{
+
+    #tocbot a.toc-link{ height:100% }
+    .is-collapsible{ max-height:3000px; overflow:hidden; }
+    .is-collapsed{ max-height:0 }
+    .is-active-link{ font-weight:700; font-color:#ba3925; }
+
+  }
+  @media print{
+    #tocbot a.toc-link.node-name--H4{ display:none }
+  }
+</style>
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
@@ -3401,8 +3419,42 @@ GIS systems have lately evolved in distributed <a href="#glossary-spatial-data-i
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-03-14 02:44:15 UTC
+Last updated 2023-03-14 09:31:01 UTC
 </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.7/tocbot.min.js"></script>
+<script>
+    /* Tocbot dynamic TOC, works with tocbot 3.0.7 */
+    var oldtoc = document.getElementById('toctitle').nextElementSibling;
+    var newtoc = document.createElement('div');
+    newtoc.setAttribute('id', 'tocbot');
+    newtoc.setAttribute('class', 'js-toc');
+    oldtoc.parentNode.replaceChild(newtoc, oldtoc);
+    tocbot.init({ contentSelector: '#content',
+        headingSelector: 'h1, h2, h3, h4',
+        smoothScroll: false,
+        collapseDepth: 2 });
+    var handleTocOnResize = function() {
+        var width = window.innerWidth
+                    || document.documentElement.clientWidth
+                    || document.body.clientWidth;
+        if (width < 768) {
+            tocbot.refresh({ contentSelector: '#content',
+                headingSelector: 'h1, h2, h3, h4',
+                collapseDepth: 6,
+                activeLinkClass: 'ignoreactive',
+                throttleTimeout: 1000,
+                smoothScroll: false });
+        }
+        else {
+            tocbot.refresh({ contentSelector: '#content',
+                headingSelector: 'h1, h2, h3, h4',
+                smoothScroll: false,
+                collapseDepth: 2 });
+        }
+    };
+    window.addEventListener('resize', handleTocOnResize);
+    handleTocOnResize();
+</script>
 </body>
 </html>
